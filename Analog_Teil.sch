@@ -8056,6 +8056,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="6.8k"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="4.7n"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="470n"/>
+<part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="6.8k"/>
+<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="6.8k"/>
 </parts>
 <sheets>
 <sheet>
@@ -8209,6 +8211,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="C10" gate="G$1" x="200.66" y="198.12" smashed="yes" rot="R90">
 <attribute name="NAME" x="200.279" y="199.644" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="205.359" y="199.644" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R16" gate="G$1" x="281.94" y="190.5" smashed="yes">
+<attribute name="NAME" x="278.13" y="191.9986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="278.13" y="187.198" size="1.778" layer="96"/>
+</instance>
+<instance part="R17" gate="G$1" x="292.1" y="190.5" smashed="yes">
+<attribute name="NAME" x="288.29" y="191.9986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="288.29" y="187.198" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8493,6 +8503,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="261.62" y1="190.5" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="190.5" x2="276.86" y2="190.5" width="0.1524" layer="91"/>
 <junction x="261.62" y="190.5"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -8504,6 +8515,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="261.62" y1="162.56" x2="261.62" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="162.56" x2="261.62" y2="162.56" width="0.1524" layer="91"/>
 <junction x="261.62" y="162.56"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
