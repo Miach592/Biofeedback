@@ -1,0 +1,23 @@
+digital Teil
+-------------
+
+Fragen:
+
+- nicht angeschlossene/genütze Pins (nicht anschließen/auf GND/Pull-Up)?
+	--> ich würde alle Pins nach außen führen auf einen Pin!
+	--> Welches Pinout würdest du vorschlagen Pinout#1 oder #2 (siehe Schaltplan)
+	
+- ADC clock output Pin vorsehen? Evlt. weitere explizite Signale auf einen Pin legen?
+
+- Wie wird die Verbindung zuwischen AGND <--> DGND realisiert?
+
+- Ich würde noch eine RGB LED vorsehen. 
+
+- der Sigma Delta hat einen positiven und einen negativen Eingang.
+	Wie muss unser Ausgangssignal vom analogen Teil am SD angeschlossen werden?
+	--> Positiv - GND
+	--> Negativ - Ausgang vom Signalweg
+	
+- hast du noch Anmerkungen was noch mit drauf sollte?
+
+Danke dir!
