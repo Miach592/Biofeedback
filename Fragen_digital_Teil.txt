@@ -1,4 +1,4 @@
-digital Teil
+﻿digital Teil
 -------------
 
 Fragen:
@@ -11,9 +11,16 @@ Fragen:
 
 - Wie wird die Verbindung zuwischen AGND <--> DGND realisiert?
 
-- Ich würde noch eine RGB LED vorsehen. 
+- COM1/2: Diese Pins werden ja nicht genützt. Wie müssen diese terminiert werden.
+  Hab im Datenblatt leider nichts gefunden.
 
-- der Sigma Delta hat einen positiven und einen negativen Eingang.
+- RTCCAP0/1. Im Referenz-Design sind hier 2 Taster angeschlossen. Was ist an diesen beiden Pins das Besondere?
+  Ich seh hier auf m Schlauch.
+
+- Ich würde noch zwei RGB LED vorsehen. Zur Anzeige der Verspannung. Es sollten aber auch die
+  bereits vorhandenen LEDs ausreichen.
+
+- der Sigma Delta hat einen positiven und einen negativen Eingang. SD0P0/SD0N0
 	Wie muss unser Ausgangssignal vom analogen Teil am SD angeschlossen werden?
 	--> Positiv - GND
 	--> Negativ - Ausgang vom Signalweg
