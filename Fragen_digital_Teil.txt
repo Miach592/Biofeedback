@@ -1,30 +1,42 @@
-﻿digital Teil
+digital Teil
 -------------
 
 Fragen:
 
 - nicht angeschlossene/genütze Pins (nicht anschließen/auf GND/Pull-Up)?
+	GG: angeschlossen muessen die general purpose IOs nicht sein, die stellt man im Code dann auf pull down.
 	--> ich würde alle Pins nach außen führen auf einen Pin!
+	GG: Alle waere eigentlich super, aber das kann das Routen extrem schwer machen. Wuerde mich auf eine Auswahl beschraenken. Speziell welche 2nd/3rd Function auf den Pins liegt die man noch brauchen koennte.
 	--> Welches Pinout würdest du vorschlagen Pinout#1 oder #2 (siehe Schaltplan)
+	GG: Wuerde eher #1 machen
 	
 - ADC clock output Pin vorsehen? Evlt. weitere explizite Signale auf einen Pin legen?
+	GG: P1.x wuerde ich auf Pins legen, da ist schon einiges drauf. Die externe Referenz, Clocks, Timer und Comp Eingaenge.
+	Vielleicht zusaetzlich noch eine UART oder SPI
 
 - Wie wird die Verbindung zuwischen AGND <--> DGND realisiert?
+	GG: Am besten an einem Punkt. Da kann man vielleicht sogar einen 0R Widerstand vorsehen, dass man es auftrennen kann zum Debug.
 
 - COM1/2: Diese Pins werden ja nicht genützt. Wie müssen diese terminiert werden.
   Hab im Datenblatt leider nichts gefunden.
+  	GG: Die sind tatsaechlich nirgends erwaehnt. Im UG steht eigentlich was man mit den unused pins machen soll.
+  	Die kann man offen lassen.
 
 - RTCCAP0/1. Im Referenz-Design sind hier 2 Taster angeschlossen. Was ist an diesen beiden Pins das Besondere?
   Ich seh hier auf m Schlauch.
-
+  	GG: Die sind fuer eine Demo soweit ich weiss. Kannst weg lassen. GPIO Taster hast Du ja.
+  	
 - Ich würde noch zwei RGB LED vorsehen. Zur Anzeige der Verspannung. Es sollten aber auch die
   bereits vorhandenen LEDs ausreichen.
+  	GG: Ja das ist eine gute Idee. Dann koennte man es ueber die Farbe sehen.
 
 - der Sigma Delta hat einen positiven und einen negativen Eingang. SD0P0/SD0N0
 	Wie muss unser Ausgangssignal vom analogen Teil am SD angeschlossen werden?
 	--> Positiv - GND
 	--> Negativ - Ausgang vom Signalweg
+	GG: Ich wuerde sagen andersrum. Und AGND.
 	
 - hast du noch Anmerkungen was noch mit drauf sollte?
+	GG: Ein HF Quartz waere noch moeglich. Muss man ja nicht hernehmen oder bestuecken, aber vielleicht stellt sich das als bessere Loesung fuer den Clock raus.
 
 Danke dir!
