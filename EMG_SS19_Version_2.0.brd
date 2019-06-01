@@ -23,15 +23,15 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -9683,7 +9683,7 @@ Covered vias can be set in Masks (Limit).
 <via x="130.175" y="60.833" extent="1-16" drill="0.35"/>
 <via x="140.97" y="59.944" extent="1-16" drill="0.35"/>
 <via x="142.875" y="76.073" extent="1-16" drill="0.35"/>
-<via x="137.795" y="74.676" extent="1-16" drill="0.35"/>
+<via x="138.938" y="75.184" extent="1-16" drill="0.35"/>
 <via x="139.7" y="82.042" extent="1-16" drill="0.35"/>
 <via x="136.779" y="88.265" extent="1-16" drill="0.35"/>
 <via x="127.127" y="91.948" extent="1-16" drill="0.35"/>
@@ -9762,7 +9762,14 @@ Covered vias can be set in Masks (Limit).
 <contactref element="SW3" pad="4"/>
 <contactref element="SW4" pad="4"/>
 <contactref element="SW5" pad="4"/>
-<via x="129.286" y="65.532" extent="1-16" drill="0.35"/>
+<via x="129.159" y="66.294" extent="1-16" drill="0.35"/>
+<via x="123.952" y="74.295" extent="1-16" drill="0.35"/>
+<via x="133.477" y="76.962" extent="1-16" drill="0.35"/>
+<via x="132.969" y="73.279" extent="1-16" drill="0.35"/>
+<via x="115.951" y="73.406" extent="1-16" drill="0.35"/>
+<via x="115.951" y="67.31" extent="1-16" drill="0.35"/>
+<via x="117.094" y="82.931" extent="1-16" drill="0.35"/>
+<via x="106.426" y="80.01" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="N$61">
 <contactref element="JP12" pad="2"/>
